@@ -72,7 +72,7 @@ Shows:
 - Total Attendance Records
 - Today Present Count
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](ashboard.png)
 
 ---
 
@@ -84,7 +84,7 @@ Add new employee with:
 - Email
 - Department
 
-![Add Employee](screenshots/employee-add.png)
+![Add Employee](employee-add.png)
 
 ---
 
@@ -94,7 +94,7 @@ Prevents:
 - Duplicate Employee ID
 - Duplicate Email
 
-![Validation](screenshots/employee-validation.png)
+![Validation](employee-validation.png)
 
 ---
 
@@ -103,7 +103,7 @@ Prevents:
 - Displays all employees
 - Delete option available
 
-![Employee List](screenshots/employee-list.png)
+![Employee List](employee-list.png)
 
 ---
 
@@ -114,7 +114,7 @@ Prevents:
 - Mark Present / Absent
 - View attendance records
 
-![Attendance](screenshots/attendance.png)
+![Attendance](attendance.png)
 
 ---
 
