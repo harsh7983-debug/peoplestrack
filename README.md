@@ -72,7 +72,7 @@ Shows:
 - Total Attendance Records
 - Today Present Count
 
-![Dashboard](ashboard.png)
+![Dashboard](dashboard.png)
 
 ---
 
@@ -224,7 +224,7 @@ CSRF_TRUSTED_ORIGINS = [
 
 # 👨‍💻 Author
 
-Harsh  
+Aman 
 GitHub: https://github.com/harsh7983-debug
 
 ---
