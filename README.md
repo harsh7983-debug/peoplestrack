@@ -26,13 +26,46 @@ PeopleTrack allows organizations to:
 - View dashboard statistics
 - Prevent duplicate employee ID & email entries
 - Mark attendance as Present / Absent
+# ✨ Features
+
+## 🔹 Core
+
+### 📊 Dashboard
+- Total Employees count
+- Total Attendance Records
+- Today's Present Count
+- Real-time API-powered stats
+
+### 👨‍💼 Employee Management
+- Add new employee
+- Unique Employee ID validation
+- Unique Email validation
+- View employee list
+- Delete employee (with proper handling)
+
+### 📅 Attendance Tracking
+- Mark attendance (Present / Absent)
+- Select attendance date
+- View attendance records
+- Linked to employee records
 
 ---
+---
+## 🔹 UX Features
 
-# 🛠️ Tech Stack
+- Real-time API integration
+- Clean card-based UI
+- Proper loading & error handling
+- Responsive layout
+- RESTful architecture
+
+---
+# 🛠 Tech Stack
 
 ## Frontend
-- React (Vite)
+- React 18
+- Vite
+- React Router
 - Axios
 - CSS
 - Vercel (Deployment)
@@ -40,19 +73,41 @@ PeopleTrack allows organizations to:
 ## Backend
 - Django
 - Django REST Framework
-- SQLite
+- SQLite (Production on Render)
+- Gunicorn
 - Render (Deployment)
 
 ---
 
-# 🏗️ Project Structure
+# 📁 Project Structure
 
 ```
 peoplestrack/
+├── backend/
+│   ├── peopletrack_backend/
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   ├── hr/
+│   │   ├── models.py
+│   │   ├── serializers.py
+│   │   ├── views.py
+│   │   ├── urls.py
+│   │   └── migrations/
+│   ├── manage.py
+│   └── requirements.txt
 │
-├── backend/      # Django REST API
+├── frontend/
+│   ├── src/
+│   │   ├── services/        # Axios API config
+│   │   ├── pages/           # Dashboard, Employees, Attendance
+│   │   ├── components/      # Reusable UI components
+│   │   └── App.jsx
+│   ├── package.json
+│   └── vite.config.js
 │
-└── frontend/     # React (Vite) Application
+├── screenshots/
+└── README.md
 ```
 
 Environment Variable used in frontend:
@@ -209,7 +264,14 @@ CSRF_TRUSTED_ORIGINS = [
 ```
 
 ---
+# ⚠️ Assumptions & Limitations
 
+- SQLite is used for simplicity (production database upgrade recommended)
+- No authentication system implemented (can be extended with JWT)
+- No pagination implemented (can be added easily)
+- No role-based access control
+
+---
 # 🎯 Future Improvements
 
 - JWT Authentication
@@ -228,5 +290,3 @@ Aman
 GitHub: https://github.com/harsh7983-debug
 
 ---
-
-⭐ If you like this project, give it a star!
